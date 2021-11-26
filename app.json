@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "Nobita",
+    "description": "Nobita",
+    "slug": "ecrm-nobita",
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.1.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/icon.png",
+    "splash": {
+      "image": "./app/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "scheme": "nobita",
+    "updates": {
+      "fallbackToCacheTimeout": 5000
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "buildNumber": "5",
+      "bundleIdentifier": "vn.ecrm.nobita",
+      "supportsTablet": true,
+      "icon": "./app/assets/icon-ios.png",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Ứng dụng cần cấp quyền truy cập vào camera của bạn để sử dụng cho việc quét mã đơn hàng, chụp ảnh báo cáo công việc hoặc thay đổi hình đại diện tài khoản (avatar).",
+        "NSPhotoLibraryUsageDescription": "Ứng dụng cần cấp quyền truy cập vào thư viện ảnh của bạn để đăng ảnh báo cáo công việc hoặc thay đổi hình đại diện tài khoản (avatar).",
+        "LSApplicationQueriesSchemes": [
+          "lyft"
+        ]
+      }
+    },
+    "android": {
+      "versionCode": 7,
+      "package": "vn.ecrm.nobita",
+      "icon": "./app/assets/icon-android.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/icon-android-foreground.png",
+        "backgroundColor": "#ff9800"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "useNextNotificationsApi": true
+    },
+    "notification": {
+      "icon": "./app/assets/icon-notification.png",
+      "color": "#ff9800",
+      "iosDisplayInForeground": true
+    }
+  }
+}
